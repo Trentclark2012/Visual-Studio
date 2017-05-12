@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <meta name="description" content="Assignment 8 page">
+    <meta name="keywords" content="Assignment,history,Visual studio, page">
+    <meta name="author" content="Trenton Clark">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--This is an example of external CSS code-->
+	<link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+
+<body style="margin-top:3.5em;">
+	<div class="row"id="container">
+		<nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a href="index.html">
+			<img src="logo.png" alt="Visual Studio Icon" style="width:2em;">
+			</a>
+		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+				  <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+				  <a class="nav-item nav-link" href="Shortcuts.html">Shortcuts</a>
+				  <a class="nav-item nav-link" href="SWOT.html">SWOT</a>
+				  <a class="nav-item nav-link" href="Plugins.html">Plugins</a>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="main_section col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-lg-2">
+      <h1 id="swoth1"><u>SWOT Analysis</u></h1>
+		  <h4 id="HistoryBullets">Strenghts</h4>
+      <ul>
+        <li><b>Does not require extra investment-</b>with our MSDN subscriptions, Visual Studio Online is already licensed. Additionally, if we wanted, we can add 5 “basic” members for free, and an unlimited number of stakeholders (people who can only view the project). Also, we don’t need to set-up and maintain any new hardware or virtual machines. We also don’t need to invest any resources into configuring an on-premise server (backup, security, maintenance, etc.). There is a pricing “catch”, related to Build time, that can be offset by configuring an on-premise build controller, so some HW investment is required but can be weighed with the price of a build hour.</li>
+        <li><b>Supports all our wishes/requirements</b> – this one is obvious, but things like Code Review, CI etc., are supported out of the box + many more.</li>
+        <li><b>Constant upgrades</b> – we never have to worry about being out of date. New features are being rolled out regularly to VSO, and we want to be on that train to save time.</li>
+        <li><b>No need for VPN</b> – VSO does not require a VPN to connect and work. This means our team can work remotely much easier, even in places where VPN access is blocked, but ports 80 and 443 are opened. Also, it means we are not tied to our infrastructure</li>
+      </ul>
+		</div>
+    
+    <div class="main_section col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-lg-2">
+      <h4 id="HistoryBullets">Weaknesses</h4>
+      <ul>
+        <li><b>Constant upgrades</b> – Microsoft is not perfect. So, while it’s mostly a good thing to have new features, it can also be a problem as new bugs can be introduced that may hinder the development. However, this is offset by the reputation that Microsoft has to uphold. Imagine what would happen if all the organizations on VSO would be unable to do their work? That’s right</li>
+        <li><b>SLA only guarantees 99,9% availability</b> – There are very few cases of VSO being offline (http://blogs.msdn.com/b/vsoservice/) for the same reasons as described above. However, if it were to happen, we are able to develop offline without major problems for a couple hours.</li>
+        <li><b>Does not support process customization</b> – if we want to modify it, we can’t yet. However, in our case, we don’t need to anymore as we’ve tailored the process to what is available. Our justification for this was: “If it’s good enough for everyone else, maybe we shouldn’t complicated.”</li>
+        <li><b>Does not support migration back to on-premise </b> –Technically, there is no supported way of migrating back to an on-premise server if we ever decide to go back. As we’ll see later, this does not mean there is no way at all but it’s not a simple “click here, then there” type of task. </li>
+        
+      </ul>
+      
+    </div>
+    <div class="main_section col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-lg-2">
+      <h4 id="HistoryBullets">Opportunities</h4>
+      <ul>
+        <li><b>Faster Development Cycle</b> –Because it integrates directly into the tools we use daily (Visual Studio & Azure), it means that team productivity should improve. It means less jumping through hoops to make certain things happen (e.g. linking check-ins with Work items, or rather, seeing changes introduced by one work item). We used Jira before, and we had an internal policy of writing the changeset number into the comment… </li>
+        <li><b>Quicker Identification of build errors</b> –Setting up a CI build with the on-prem TFS we used thus far was a bit complicated because the version was outdated. That meant automatic deploys to Azure environments were impossible (in terms of effort required vs. gain). VSO is fully integrated with Azure in this department, and additionally, it allows connecting an on premise build controller. </li>
+        <li><b>Improve the release management process</b> – It also allows connecting to tools like Release Management, and Microsoft Test Manager, which means our existing processes can be vastly improved and sped up. </li>
+        
+        
+      </ul>
+      
+    </div>
+    <div class="main_section col-lg-8 col-md-12 col-sm-12 col-xs-12 offset-lg-2">
+      
+      <h4 id="HistoryBullets">Threats</h4>
+      <ul>
+        <li><b>No code backups</b> –technically, you can’t migrate back to on-premise servers without loosing your revision history. However, Microsoft has already mentioned a potential solution for this on their blog. It might not be publicly available, but from what we understood, there is some support available for this migration. In any case, code backups can be mitigated by regularly creating “drops”. It’s not ideal, but can help solve some part of the problem. </li>
+        <li><b>Moving code to non-company-owned servers</b> – This is a big one. Having code located outside the company can be perceived as a threat. However, code ownership and all legal rights are explicitly retained by the author/owner of the code and no ownership is implied by Microsoft in the legal agreements. Additionally, Microsoft is ISO 27001 certified. The ISO 27000 family of standards helps organizations keep information assets secure. Also, in terms of security and backups, we are confident that Microsoft has, compared to our team, an almost infinite number of resources at their disposal that make sure VSO is protected from things like DDOS attacks, hacks, etc. Our code should be as safe, if not safer. Keep in mind though, the major threat to code theft, are still humans. This is solved using legal tactics, not technical measures. </li>
+        
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+
+
+		
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
+</html>
