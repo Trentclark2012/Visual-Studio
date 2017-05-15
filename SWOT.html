@@ -36,10 +36,18 @@
       <h1 id="swoth1"><u>SWOT Analysis</u></h1>
 		  <h4 id="HistoryBullets">Strenghts</h4>
       <ul>
-        <li><b>Does not require extra investment-</b>with our MSDN subscriptions, Visual Studio Online is already licensed. Additionally, if we wanted, we can add 5 “basic” members for free, and an unlimited number of stakeholders (people who can only view the project). Also, we don’t need to set-up and maintain any new hardware or virtual machines. We also don’t need to invest any resources into configuring an on-premise server (backup, security, maintenance, etc.). There is a pricing “catch”, related to Build time, that can be offset by configuring an on-premise build controller, so some HW investment is required but can be weighed with the price of a build hour.</li>
-        <li><b>Supports all our wishes/requirements</b> – this one is obvious, but things like Code Review, CI etc., are supported out of the box + many more.</li>
-        <li><b>Constant upgrades</b> – we never have to worry about being out of date. New features are being rolled out regularly to VSO, and we want to be on that train to save time.</li>
-        <li><b>No need for VPN</b> – VSO does not require a VPN to connect and work. This means our team can work remotely much easier, even in places where VPN access is blocked, but ports 80 and 443 are opened. Also, it means we are not tied to our infrastructure</li>
+        <li><b>The structure of the Basic programming language is very simple, particularly as to the executable code.
+		<li><b>VB is not only a language but primarily an integrated, interactive development environment (“IDE“).</li>
+		<li><b>The VB-IDE has been highly optimized to support rapid application development (“RAD”). It is particularly easy to develop graphical user interfaces and to connect them to handler functions provided by the application.</li>
+		<li><b>The graphical user interface of the VB-IDE provides intuitively appealing views for the management of the program structure in the large and the various types of entities (classes, modules, procedures, forms, …).</li>
+		<li><b>VB provides a comprehensive interactive and context-sensitive online help system.</li>
+		<li><b>When editing program texts the “IntelliSense” technology informs you in a little popup window about the types of constructs that may be entered at the current cursor location.</li>
+		<li><b>VB is a component integration language which is attuned to Microsoft’s Component Object Model (“COM”).</li>
+		<li><b>COM components can be written in different languages and then inegrated using VB.</li>
+		<li><b>Interfaces of COM components can be easily called remotely via Distributed COM (“DCOM”), which makes it easy to construct distributed applications.</li>
+		<li><b>COM components can be embedded in / linked to your application’s user interface and also in/to stored documents (Object Linking and Embedding “OLE”, “Compound Documents”).</li>
+		<li><b>There is a wealth of readily available COM components for many different purposes.</li>
+		<li><b>Visual Basic is built around the .NET environment used by all Microsoft Visual languages, so there is very little that can’t be done in Visual Basic that can be done in other languages (such as C#).</li>
       </ul>
 		</div>
     
@@ -47,10 +55,8 @@
       <h4 id="HistoryBullets">Weaknesses</h4>
       <ul>
         <li><b>Constant upgrades</b> – Microsoft is not perfect. So, while it’s mostly a good thing to have new features, it can also be a problem as new bugs can be introduced that may hinder the development. However, this is offset by the reputation that Microsoft has to uphold. Imagine what would happen if all the organizations on VSO would be unable to do their work? That’s right</li>
-        <li><b>SLA only guarantees 99,9% availability</b> – There are very few cases of VSO being offline (http://blogs.msdn.com/b/vsoservice/) for the same reasons as described above. However, if it were to happen, we are able to develop offline without major problems for a couple hours.</li>
-        <li><b>Does not support process customization</b> – if we want to modify it, we can’t yet. However, in our case, we don’t need to anymore as we’ve tailored the process to what is available. Our justification for this was: “If it’s good enough for everyone else, maybe we shouldn’t complicated.”</li>
-        <li><b>Does not support migration back to on-premise </b> –Technically, there is no supported way of migrating back to an on-premise server if we ever decide to go back. As we’ll see later, this does not mean there is no way at all but it’s not a simple “click here, then there” type of task. </li>
-        
+       <li><b>Visual basic is a proprietary programming language written by Microsoft, so programs written in Visual basic cannot, easily, be transferred to other operating systems.</li>
+		<li><b>There are some, fairly minor disadvantages compared with C. C has better declaration of arrays – its possible to initialise an array of structures in C at declaration time; this is impossible in VB.</li>
       </ul>
       
     </div>
@@ -60,8 +66,8 @@
         <li><b>Faster Development Cycle</b> –Because it integrates directly into the tools we use daily (Visual Studio & Azure), it means that team productivity should improve. It means less jumping through hoops to make certain things happen (e.g. linking check-ins with Work items, or rather, seeing changes introduced by one work item). We used Jira before, and we had an internal policy of writing the changeset number into the comment… </li>
         <li><b>Quicker Identification of build errors</b> –Setting up a CI build with the on-prem TFS we used thus far was a bit complicated because the version was outdated. That meant automatic deploys to Azure environments were impossible (in terms of effort required vs. gain). VSO is fully integrated with Azure in this department, and additionally, it allows connecting an on premise build controller. </li>
         <li><b>Improve the release management process</b> – It also allows connecting to tools like Release Management, and Microsoft Test Manager, which means our existing processes can be vastly improved and sped up. </li>
-        
-        
+        <li><b>More flexibility for developers<b> -This move by Microsoft also changes the entire ecosystem of developing, including for those who rely on the .NET platform. Developers are no longer forced into the narrow boundaries of a particular or singular runtime setting.</li>
+        <li><b>New coding opportunities<b> -Visual Studio is a very popular IDE. According to a blog post from Microsoft, it has over 7 million 2013 version downloads, and .NET has been installed more than a billion times. By turning to open source, the IDE offers developer tools that cover every developer, across all platforms.</li>
       </ul>
       
     </div>
